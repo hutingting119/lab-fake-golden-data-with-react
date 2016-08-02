@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
     <style type="text/css">
-        #center{
+        #center {
             margin-top: 50px;
             margin-left: 600px;
+        }
+
+
+        .left{
+            margin-top: 80px;
+            margin-left: 20px;
         }
 
     </style>
@@ -25,12 +31,27 @@
             return (
                     <div>
                         <button onClick={this.increment} id="center">预览</button>
+
                     </div>
             );
         }
     });
 
-    ReactDOM.render(<HelloWorld />, document.getElementById('example'));
+    var Put = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <textarea type="text" rows="20" cols="20" className="left"></textarea>
+
+                    </div>
+            )
+        }
+    })
+
+    
+
+    ReactDOM.render(< HelloWorld/>, document.getElementById('example'));
+
 </script>
 </body>
 </html>
