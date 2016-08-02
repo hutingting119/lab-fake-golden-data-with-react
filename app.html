@@ -9,23 +9,16 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
     <style type="text/css">
-        #center {
-            margin-top: 50px;
-            margin-left: 600px;
+
+        .left{
+            margin-top: 20px;
         }
 
-        .left {
-            margin-top: 80px;
-            margin-left: 20px;
+        .right{
+            margin-top: 0px;
+            margin-left: 80px;
         }
-        .right1{
-            margin-top: 80px;
-            margin-left: 0px;
-        }
-        .right2{
-            margin-top: 120px;
-            margin-left: 0px;
-        }
+
 
     </style>
 </head>
@@ -33,44 +26,30 @@
 <div id="example"></div>
 <script type="text/babel">
 
-    var HelloWorld = React.createClass({
+    const HelloWorld = React.createClass({
         render: function () {
             return (
                     <div>
+                        <center>
                         <button onClick={this.increment} id="center">预览</button>
+                        </center>
+                        <center>
+                            <textarea type="text" rows="25" cols="40" className="left" ></textarea>
+
+                            <textarea type="text" rows="10" cols="10" className="right">表单</textarea>
+                            <button onclick="" id="right1">+</button>
+
+
+                            <textarea type="text" rows="10" cols="10" >时间表</textarea>
+                            <button onClick="">+</button>
+                        </center>
 
                     </div>
             );
         }
     });
 
-    var Put = React.createClass({
-        render: function () {
-            return (
-                    <div>
-                        <textarea type="text" rows="20" cols="20" className="left"></textarea>
-
-                    </div>
-            )
-        }
-    })
-
-    var Forms= React.createClass({
-        render: function () {
-            return (
-                    <div>
-                        <center>
-                        <button onclick="" >+</button>
-                        <textarea type="text" rows="10" cols="10" className="right1"></textarea>
-                        <button onClick="">+</button>
-                        <textarea type="text" rows="10" cols="10" className="right2"></textarea>
-                    </center>
-                    </div>
-            )
-        }
-    })
-
-    ReactDOM.render(<Forms />, document.getElementById('example'));
+    ReactDOM.render(<HelloWorld />, document.getElementById('example'));
 
 </script>
 </body>
