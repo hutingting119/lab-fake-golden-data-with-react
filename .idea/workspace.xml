@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c1f688-9e10-4db4-b5cd-823cb7b3d24d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/browser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-dom-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-dom-server.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-dom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-dom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-with-addons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react-with-addons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/react.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.html" afterPath="$PROJECT_DIR$/app.html" />
     </list>
     <ignored path="lab-fake-golden-data-with-react.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="app.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -123,10 +115,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.3.0/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,12 +189,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470129262962</updated>
-      <workItem from="1470129264536" duration="9067000" />
+      <workItem from="1470129264536" duration="12326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9067000" />
+    <option name="totallyTimeSpent" value="12326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
@@ -267,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>

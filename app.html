@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8"/>
     <title>lab fake</title>
-    <script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
+    <script src="./build/react.js"></script>
+    <script src="./build/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+    <style type="text/css">
+        #center{
+            margin-top: 50px;
+            margin-left: 600px;
+        }
+
+    </style>
 </head>
 <body>
 <div id="example"></div>
@@ -15,7 +24,7 @@
         render: function () {
             return (
                     <div>
-                        <button onClick={this.increment}>预览</button>
+                        <button onClick={this.increment} id="center">预览</button>
                     </div>
             );
         }
