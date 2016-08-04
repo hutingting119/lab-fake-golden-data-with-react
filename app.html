@@ -10,11 +10,11 @@
 
     <style type="text/css">
 
-        .left{
+        .left {
             margin-top: 20px;
         }
 
-        .right{
+        .right {
             margin-top: 0px;
             margin-left: 80px;
         }
@@ -26,30 +26,85 @@
 <div id="example"></div>
 <script type="text/babel">
 
-    const HelloWorld = React.createClass({
-        render: function () {
-            return (
-                    <div>
-                        <center>
-                        <button onClick={this.increment} id="center">预览</button>
-                        </center>
-                        <center>
-                            <textarea type="text" rows="25" cols="40" className="left" ></textarea>
-
-                            <textarea type="text" rows="10" cols="10" className="right">表单</textarea>
-                            <button onclick="" id="right1">+</button>
-
-
-                            <textarea type="text" rows="10" cols="10" >时间表</textarea>
-                            <button onClick="">+</button>
-                        </center>
-
-                    </div>
-            );
+    class Addforms extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                needAdd: [],
+                tag: true
+            }
         }
-    });
 
-    ReactDOM.render(<HelloWorld />, document.getElementById('example'));
+        addforms() {
+            this.setState(function () {
+                let needAdd = this.state.forms;
+                needAdd.push(0);
+                let index = this.state.index++;
+                return {needAdd, index};
+            })
+        }
+
+        deleforms() {
+            this.setState(function () {
+                let needAdd = this.state.forms.splice(index, 1);
+                return needAdd;
+            })
+        }
+
+        addTime() {
+            this.setState(function () {
+                let needAdd = this.state.forms;
+                needAdd.push(1);
+                let index = this.state.index++;
+                return {needAdd, index};
+            })
+        }
+
+        deleteForm(index) {
+            this.setState(function () {
+                let needAdd = this.state.forms.splice(index, 1);
+                return needAdd;
+            })
+        }
+
+        turn() {
+            this.setState({
+                flag: !this.state.flag
+            })
+        }
+
+        render() {
+            if (this.state.tag) {
+                return (
+                        <div>
+                            <div>
+                                <div>
+                                    <center>
+                                        <button onClick={()=>this.addText()} id="center">预览</button>
+                                    </center>
+                                </div>
+                            </div>
+                            <center>
+                                <textarea type="text" rows="25" cols="40" className="left" id="needAdd"></textarea>
+
+                                <textarea type="text" rows="10" cols="10" className="right" id="forms">表单</textarea>
+
+
+                                <button onclick="" id="right1" onClick={()=>this.addforms()}>+</button>
+
+
+                                <textarea type="text" rows="10" cols="10">时间表</textarea>
+                                <button onClick={()=>this.addTime()}>+</button>
+                            </center>
+
+                        </div>
+                );
+            }
+        }
+    };
+
+
+    ReactDOM.render(<Addforms />, document.getElementById('example'));
 
 </script>
 </body>

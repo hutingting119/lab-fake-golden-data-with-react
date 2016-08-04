@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>表单</title>
+    <title>lab fake</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="build/react.js"></script>
     <script src="build/react-dom.js"></script>
@@ -79,8 +79,8 @@
                                                     <div>
                                                         <br/>
                                                         <div >
-                                                            <textarea type="text"/>
-                                                            <button onClick={()=>this.deleteForm(index)}>delete</button>
+                                                            <textarea type="text" rows="2" cols="20"/>
+                                                            <button onClick={()=>this.deleteForm(index)}>-</button>
                                                         </div>
                                                         <br/>
 
@@ -93,7 +93,7 @@
                                                         <br/>
                                                         <div >
                                                             <input type="date"/>
-                                                            <button onClick={()=>this.deleteForm(index)}>delete</button>
+                                                            <button onClick={()=>this.deleteForm(index)}>-</button>
                                                         </div>
                                                         <br/>
                                                     </div>
@@ -113,7 +113,7 @@
                                     <br/>
                                     <div >
                                         <button  onClick={()=>this.addDate()}>+</button>
-                                        <textarea type="text" rows="2" cols="20">时间表</textarea>
+                                        <textarea type="date">时间表</textarea>
                                     </div>
                                 </div>
                             </div>
